@@ -770,6 +770,141 @@ let list = [
     grade: "비우주세기",
   },
   {
+    name: "건담 AGE-FX",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-2 다크 하운드",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-1 노멀",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-2 노멀",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-3 노멀",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 레길리스",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-2 더블불릿",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-1 풀 글랜서",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "G-사이포스",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "G-바운서",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "G-엑세스",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-1 타이터스",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "제노아스",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "아델 (디바 컬러)",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "제노아스 커스텀",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "제다스",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "바쿠토",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "도라도",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-3 포트레스",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-1 스팔로",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "파르시아",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "샬돌 카이",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "다나진",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-3 오비탈",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 AGE-3 포트레스",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "기라르가",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
+    name: "G-엑세스 잭엣지",
+    genre: "기동전사 건담 AGE",
+    grade: "비우주세기",
+  },
+  {
     name: "치낫가이",
     genre: "건담 빌드 파이터즈",
     grade: "비우주세기",
@@ -1047,6 +1182,136 @@ let list = [
   {
     name: "드레드노트",
     genre: "기동전사 건담 SEED",
+    grade: "비우주세기",
+  },
+  {
+    name: "스트라이크 프리덤 건담",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "자쿠 워리어 라이브 콘서트 Ver.",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "카오스 건담",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "어비스 건담",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "구프 이그니티드 이자크 전용기",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 어스트레이 골드 프레임 아마츠",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "아카츠키 건담 오오와시/시라누이",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "데스티니 건담",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 어스트레이 느와르",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "케르베로스 바쿠 하운드",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "진 타입 하이메뉴버 2",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "무라사메 양산형",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "인피니티 저스티스 건담",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 어스트레이 블루 프레임 D",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "이자크 전용 구프 이그니티드",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "구프 이그니티드 양산기",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "슬로터 대거",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "임펄스 건담 (소드 포스)",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "건너 자쿠 워리어",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "레전드 건담",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "카오스 건담",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "가이아 건담",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "레이 전용 블레이즈 자쿠 팬텀",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "루나마리아 전용 건너 자쿠 워리어",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "자쿠 워리어",
+    genre: "기동전사 건담 SEED DESTINY",
+    grade: "비우주세기",
+  },
+  {
+    name: "세이버 건담",
+    genre: "기동전사 건담 SEED DESTINY",
     grade: "비우주세기",
   },
   {
@@ -1373,6 +1638,441 @@ let list = [
   {
     name: "육전형 건담 S형 (썬더볼트)",
     genre: "기동전사 건담 썬더볼트",
+    grade: "UC",
+  },
+  {
+    name: "건담 디 오리진 Ver.",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "건탱크 초기형",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "건캐논 기동시험형 / 화력시험형",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "짐 인터셉트 커스텀",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "맛슈 전용 모빌워커 01식 후기형",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "자쿠 I (구형 자쿠)",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "자쿠 I (구형 자쿠) 키시리아 부대기",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "샤아 전용 자쿠 I (구형 자쿠)",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "액트 자쿠 키시리아 부대기",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "자쿠 II 타입 C-6/R6",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "샤아 전용 자쿠 II 붉은 햬성 Ver.",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "샤아 전용 자쿠 II",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "오르테가 전용 고기동형 자쿠 II",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "자쿠 II C형/ C-5형",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "자쿠 하프 캐논",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "프로토타입 돔",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "람바 랄 전용 부그",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "자쿠 I (구형 자쿠) 데님/슬렌더 기",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "국지형 건담",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "국지형 건담 (북미전선사양)",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "건담 FSD",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "와프",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "프로토타입 구프 전술실증기",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "건캐논 최초기형 철기병중대사양",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "가이아/맛슈 전용 고기동형 자쿠II",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "짐 가드 커스텀",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "건캐논 (쿠쿠르스 도안의 섬 Ver.)",
+    genre: "기동전사 건담 The Origin",
+    grade: "UC",
+  },
+  {
+    name: "더블오 건담",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "더블오라이저 GN 콘덴서 타입",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "켈딤 건담",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 버체 (바체)",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "마스라오",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 큐리오스",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "티에렌 우주형",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 듀나메스",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "오버 플래그",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "징크스 III 연방군 타입",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "징크스 III",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 아스트레아 타입-F",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "더블오 건담 세븐소드",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 엑시아",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "쁘띠가이 세츠나 F 세이에이 블루 & 플래카드",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "쁘띠가이 록온 스트라토스 그린 & 플래카드",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "쁘띠가이 그라함 에이커 화이트 & 플래카드",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "쁘띠가이 알렐루야 합티즘 오렌지 & 플래카드",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "쁘띠가이 티에리아 아데 퍼플 & 플래카드",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "퀀터 풀 세이버",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "더블오 건담 세븐소드/G",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 엑시아 리페어 II",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "티에렌 육전형",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "그라함 전용 유니온 플래그 커스텀",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "세라핌 건담",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "징크스",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "티에렌 타오즈",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 스로네 아인",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 쓰로네 쯔바이",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 나드레",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "티에렌 우주지휘관형",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "사세스 전용 이낙트 커스텀",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "이낙트 모의전 컬러",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "어헤드 양산형",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "부시도 전용 어헤드",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "GN아쳐",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "세르게이 전용 티에렌 타오즈",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "가랏조",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "어헤드 스멀트론",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "아르케 건담",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "스사노오",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "오 건담 (실전배치형)",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "힐링 전용 가랏조",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "세라비 건담",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "리본즈 건담",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 아발란체 엑시아 대시",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 아발란체",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "더블오 퀀터",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 샤바나",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 하루트",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "라파엘 건담",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "브레이브 양산형",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "건담 아발란체",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "더블오 잔라이저",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "브레이브 지휘관용 시험기",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "GN 암즈",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "유니온 플래그",
+    genre: "기동전사 건담 OO",
+    grade: "비우주세기",
+  },
+  {
+    name: "비기나 기나",
+    genre: "기동전사 건담 F91",
+    grade: "UC",
+  },
+  {
+    name: "비기나 기나 II",
+    genre: "기동전사 건담 F91",
+    grade: "UC",
+  },
+  {
+    name: "건담 F91",
+    genre: "기동전사 건담 F91",
     grade: "UC",
   },
 
