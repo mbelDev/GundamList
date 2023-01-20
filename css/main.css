@@ -1,44 +1,49 @@
 @charset "UTF-8";
 .header {
-  position: fixed;
   display: flex;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
   z-index: 9;
   background: #fff;
   background-image: url(../img/thumb.png);
-  background-size: cover;
   background-position: 80px 120px;
+  background-size: cover;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .header-wrap {
   padding: 5px;
 }
 .header__logo {
-  position: relative;
   display: inline-block;
+  position: relative;
+  color: #fff;
 }
 .header__search {
-  position: relative;
   display: inline-block;
+  position: relative;
 }
 .header__btn {
   position: absolute;
   right: 15px;
+  padding: 2px;
   border: 1px solid #888;
+  background: #fff;
   cursor: pointer;
 }
 .header__menu {
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 40px;
   right: 0;
-  width: 100vw;
-  height: 100vh;
-  vertical-align: center;
   left: 100vw;
+  overflow: scroll;
+  max-height: calc(100vh - 40px);
   transition: all 300ms;
+  vertical-align: center;
 }
 .header__menu.open {
   left: 0;
@@ -53,15 +58,15 @@
   height: 34px;
 }
 .header__menu .menu li {
-  border: 1px solid #777;
   line-height: 39px;
+  border: 1px solid #777;
 }
 .header__menu .menu li:before {
-  content: " ";
   display: inline-block;
   width: 10px;
   height: 10px;
   border: 1px solid #000;
+  content: " ";
 }
 .header__menu .menu-sub {
   z-index: 3;
@@ -86,8 +91,8 @@
   transition: all 300ms;
 }
 .header__menu .menu-sub > ul li {
-  background: #77f;
   padding-left: 8px;
+  background: #77f;
 }
 .header__menu .menu-sub-sub ul {
   height: 0px;
@@ -95,8 +100,8 @@
   transition: all 300ms;
 }
 .header__menu .menu-sub-sub ul li {
-  background: #55a;
   padding-left: 8px;
+  background: #55a;
 }
 .header__menu .menu-sub-sub p.open + ul {
   height: auto;
@@ -114,23 +119,23 @@
 }
 
 .item {
-  position: relative;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
-  border: 1px solid #000;
   width: 100%;
   height: auto;
+  position: relative;
   text-align: center;
+  border: 1px solid #000;
   vertical-align: center;
-  align-items: center;
 }
 .item span {
   line-height: 24px;
 }
 .item .name {
   width: 60%;
-  font-weight: 600;
   padding: auto;
+  font-weight: 600;
   color: #151533;
   background: #99f;
 }
@@ -146,14 +151,14 @@
 }
 
 .itemTitle {
-  position: relative;
   display: flex;
-  border: 1px solid #000;
+  align-items: center;
   width: 100%;
   height: 24px;
+  position: relative;
   text-align: center;
+  border: 1px solid #000;
   vertical-align: center;
-  align-items: center;
 }
 .itemTitle .name {
   width: 20%;

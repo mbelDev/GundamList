@@ -1,10 +1,14 @@
 const search = document.querySelector(".search-btn");
 const items = document.querySelectorAll(".item");
+
 const menu = document.querySelector(".menu-btn");
 const menuWnd = document.querySelector(".header__menu");
 const menuMain = document.querySelectorAll(".menu-main > p");
 const menuSub = document.querySelectorAll(".menu-sub > p");
 const menuSubSub = document.querySelectorAll(".menu-sub-sub > p");
+
+const arrFilter = [];
+
 let menuHeight = 0;
 let openMenu = 0;
 
@@ -90,6 +94,7 @@ function resetSub() {
   let target = document.querySelectorAll(".menu-sub-sub > ul");
   target.forEach((element) => {
     element.style = "height:0px";
+    element.previousSibling.previousSibling.classList.remove("open");
   });
 }
 function resetMain() {
@@ -139,6 +144,7 @@ function openSmooth(target, sub = false) {
       part.previousSibling.previousSibling.classList.remove("subOpen");
     } else if (target.classList.contains("subOpen")) {
       target.classList.remove("subOpen");
+      resetSub();
     }
   }
 }
@@ -148,7 +154,7 @@ function openSmooth(target, sub = false) {
 // 검색창
 search = document.addEventListener("keyup", (e) => {
   const items = document.querySelectorAll(".item");
-  const serchFilter = e.target.value.toLowerCase().trim();
+  const serchFilter = e.target.value.trim();
   items.forEach((item) => {
     if (item.textContent.includes(serchFilter)) {
       item.style.display = "flex";

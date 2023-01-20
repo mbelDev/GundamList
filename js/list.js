@@ -31,7 +31,7 @@ let list = [
   {
     name: "건담",
     genre: "기동전사 건담",
-    grade: ["HG", "MG", "PG"],
+    grade: ["HG MG PG"],
   },
   {
     name: "건캐논",
@@ -51,7 +51,7 @@ let list = [
   {
     name: "육전형 짐",
     genre: "기동전사 건담",
-    grade: ["HG", "MG"],
+    grade: ["HG"],
   },
   {
     name: "자쿠 I (구형 자쿠)",
@@ -64,8 +64,23 @@ let list = [
     grade: ["HG", "MG"],
   },
   {
+    name: "자쿠 II F2",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG", "MG"],
+  },
+  {
     name: "샤아 전용 자쿠",
     genre: "기동전사 건담",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "구프",
+    genre: "기동전사 건담",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "구프 커스텀",
+    genre: "기동전사 건담: 제MS08소대",
     grade: ["HG", "MG"],
   },
   {
@@ -81,12 +96,47 @@ let list = [
   {
     name: "샤아 전용 즈고크",
     genre: "기동전사 건담",
-    grade: ["HG", "MG"],
+    grade: ["HG"],
   },
   {
     name: "곡그",
     genre: "기동전사 건담",
     grade: ["HG"],
+  },
+  {
+    name: "걍",
+    genre: "기동전사 건담",
+    grade: ["HG MG"],
+  },
+  {
+    name: "돔",
+    genre: "기동전사 건담",
+    grade: ["HG MG"],
+  },
+  {
+    name: "겔구그",
+    genre: "기동전사 건담",
+    grade: ["HG MG"],
+  },
+  {
+    name: "샤아 전용 겔구그",
+    genre: "기동전사 건담",
+    grade: ["HG MG"],
+  },
+  {
+    name: "조니 라이덴 전용 겔구그",
+    genre: "기동전사 건담",
+    grade: ["HG MG"],
+  },
+  {
+    name: "풀 아머 건담",
+    genre: "기동전사 건담",
+    grade: ["MG"],
+  },
+  {
+    name: "G-3 건담",
+    genre: "기동전사 건담",
+    grade: ["MG"],
   },
   {
     name: "하이곡그",
