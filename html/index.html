@@ -22,6 +22,19 @@
           <div class="header__menu">
             <ul class="menu menu-main">
               <li class="menu menu-sub">
+                <p>등급분류 필터</p>
+                <ul class="filter">
+                  <li><p>HG</p></li>
+                  <li><p>MG</p></li>
+                  <li><p>PG</p></li>
+                  <li><p>MS</p></li>
+                  <li><p>1/144</p></li>
+                  <li><p>1/100</p></li>
+                  <li><p>1/60</p></li>
+                  <li><p>1/32</p></li>
+                </ul>
+              </li>
+              <li class="menu menu-sub">
                 <p>우주세기 건담</p>
                 <ul>
                   <li class="menu menu-sub-sub">
@@ -46,7 +59,20 @@
               <li class="menu menu-sub">
                 <p>비 우주세기 모빌슈트</p>
                 <ul>
-                  <li>쓰</li>
+                  <li class="menu menu-sub-sub">
+                    <p>쓰</p>
+                    <ul>
+                      <li>
+                        <p>테</p>
+                      </li>
+                      <li>
+                        <p>스</p>
+                      </li>
+                      <li>
+                        <p>트</p>
+                      </li>
+                    </ul>
+                  </li>
                   <li>기</li>
                   <li>싫</li>
                   <li>어</li>
@@ -59,16 +85,21 @@
       </header>
       <main class="main">
         <section class="main__list">
-          <div class="container">
+          <div class="container list_area">
+            <div class="itemTitle">
+              <span class="name">이름</span>
+              <span class="grade">등급</span>
+              <span class="genre">출연 작품</span>
+            </div>
             <div class="item">
               <span class="name">자쿠</span>
-              <span class="genre">기동전사 건담</span>
               <span class="grade">HG MG PG MS</span>
+              <span class="genre">기동전사 건담</span>
             </div>
             <div class="item">
               <span class="name">볼</span>
-              <span class="genre">기동전사 건담</span>
               <span class="grade">HG MG</span>
+              <span class="genre">기동전사 건담</span>
             </div>
           </div>
         </section>
@@ -76,5 +107,9 @@
       <footer class="footer"></footer>
     </div>
     <script src="../js/main.js"></script>
+    <script src="../js/list.js"></script>
+    <script defer>
+      listReset();
+    </script>
   </body>
 </html>

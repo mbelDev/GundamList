@@ -1,4 +1,5 @@
 const search = document.querySelector(".search-btn");
+const items = document.querySelectorAll(".item");
 const menu = document.querySelector(".menu-btn");
 const menuWnd = document.querySelector(".header__menu");
 const menuMain = document.querySelectorAll(".menu-main > p");
@@ -23,11 +24,31 @@ menuSub.forEach((element, index) => {
 });
 menuSubSub.forEach((element, index) => {
   element.addEventListener("click", function () {
-    element.classList.toggle("open");
-    resetSub();
+    if (element.classList.contains("open")) {
+      //모든 서브를 닫는다.
+      resetSub();
+      resetHeight();
+    } else {
+      resetSub();
+      resetHeight();
+      element.classList.add("open");
+    }
+    // 그리고 타겟 서브를 연다.
     openSmooth(element, true);
-    element.parentElement;
+    // element.parentElement;
   });
+  /*
+
+    급해서 대충 만들었으니까 나중에 좀 더 다듬을 것.
+    = 리셋 서브, 리셋 하이트, 서브 열고닫는 부분....
+    //이상적인 동작//
+    모든 서브를 닫고 선택된 서브만 열기.
+    열린 서브를 선택하면 모든 서브를 닫는다.
+    닫힌 서브를 선택하면 선택 서브만 열고 나머지를 다 닫는다.
+    =>모두 닫고 선택만 열거나
+    =>선택 서브 외의 모든 서브를 닫거나.
+
+  */
 });
 
 function open() {
@@ -42,6 +63,7 @@ function reset() {
   menuWnd.classList.remove("open");
   menuSub.forEach((element, index) => {
     element.classList.remove("open");
+    element.classList.remove("subOpen");
   });
   menuSubSub.forEach((element, index) => {
     element.classList.remove("open");
@@ -76,6 +98,21 @@ function resetMain() {
     element.style = "height:0px";
   });
 }
+function resetHeight() {
+  menuSub.forEach((element) => {
+    let target = element.nextSibling.nextSibling;
+    if (element.classList.contains("open")) {
+      let height = target.children.length;
+      target.style = `height:${height * 40}px`;
+      element.classList.remove("subOpen");
+    } else {
+      target.style = `height:0px`;
+    }
+  });
+  menuSubSub.forEach((element, index) => {
+    element.classList.remove("open");
+  });
+}
 
 function openSmooth(target, sub = false) {
   let cont = target.nextSibling.nextSibling;
@@ -85,9 +122,11 @@ function openSmooth(target, sub = false) {
     let height = cont.children.length;
     cont.style = `height:${height * 40}px;`;
     if (sub == true) {
+      // 서브메뉴의 서브에서 호출한 경우
       let part = target.parentElement.parentElement;
       menuHeight = height + part.children.length;
       part.style = `height:${menuHeight * 40}px`;
+      part.previousSibling.previousSibling.classList.add("subOpen");
     }
     console.log(menuHeight);
   } else {
@@ -97,8 +136,24 @@ function openSmooth(target, sub = false) {
       let part = target.parentElement.parentElement;
       menuHeight = part.children.length;
       part.style = `height:${menuHeight * 40}px`;
-    } else {
-      resetSub();
+      part.previousSibling.previousSibling.classList.remove("subOpen");
+    } else if (target.classList.contains("subOpen")) {
+      target.classList.remove("subOpen");
     }
   }
 }
+
+// ---------------------------------------------------- //
+
+// 검색창
+search = document.addEventListener("keyup", (e) => {
+  const items = document.querySelectorAll(".item");
+  const serchFilter = e.target.value.toLowerCase().trim();
+  items.forEach((item) => {
+    if (item.textContent.includes(serchFilter)) {
+      item.style.display = "flex";
+    } else {
+      item.style.display = "none";
+    }
+  });
+});
