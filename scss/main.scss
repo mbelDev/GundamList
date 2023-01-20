@@ -112,6 +112,14 @@
           display: flex;
           flex-wrap: wrap;
           height: 0;
+          li {
+            border: transparent;
+            background-color: white;
+            p {
+              width: auto;
+              margin: 0px 10px;
+            }
+          }
         }
       }
     }
@@ -142,6 +150,8 @@
     background: #99f;
   }
   .grade {
+    display: flex;
+    justify-content: space-evenly;
     width: 40%;
     padding: auto;
     background: #fff;

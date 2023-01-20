@@ -15,8 +15,13 @@ function listReset() {
     name.innerHTML = element.name;
     name.classList.add("name");
     let grade = document.createElement("span");
-    grade.innerHTML = element.grade;
     grade.classList.add("grade");
+    for (i = 0; i < element.grade.length; i++) {
+      let inner = document.createElement("p");
+      inner.innerHTML = element.grade[i];
+      gradeColor(inner);
+      grade.append(inner);
+    }
     let genre = document.createElement("span");
     genre.innerHTML = element.genre;
     genre.classList.add("genre");
@@ -27,11 +32,32 @@ function listReset() {
   });
 }
 
+function gradeColor(target) {
+  target.style.fontWeight = "600";
+  switch (target.innerHTML) {
+    case "HG":
+      target.style.color = "#f90";
+      break;
+    case "RG":
+      target.style.color = "#fd2";
+      target.style.textShadow = " #000 1px 1px 2px";
+      break;
+    case "MG":
+      target.style.color = "#092";
+      break;
+    case "PG":
+      target.style.color = "#F23";
+      break;
+    default:
+      target.style.color = "#000";
+  }
+}
+
 let list = [
   {
     name: "건담",
     genre: "기동전사 건담",
-    grade: ["HG MG PG"],
+    grade: ["HG", "RG", "MG", "PG", "MS"],
   },
   {
     name: "건캐논",
@@ -42,6 +68,31 @@ let list = [
     name: "건탱크",
     genre: "기동전사 건담",
     grade: ["HG", "MG"],
+  },
+  {
+    name: "G 파이터",
+    genre: "기동전사 건담",
+    grade: ["MG"],
+  },
+  {
+    name: "볼",
+    genre: "기동전사 건담",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "볼 샤크마우스 버전",
+    genre: "기동전사 건담: MS IGLOO",
+    grade: ["MG"],
+  },
+  {
+    name: "볼 제08소대 ver.",
+    genre: "기동전사 건담: 제MS08소대",
+    grade: ["MG"],
+  },
+  {
+    name: "볼 ver.ka",
+    genre: "기동전사 건담",
+    grade: ["MG"],
   },
   {
     name: "짐",
@@ -59,6 +110,26 @@ let list = [
     grade: ["HG", "MG"],
   },
   {
+    name: "자쿠 I 스나이퍼 타입",
+    genre: "기동전사 건담",
+    grade: ["HG"],
+  },
+  {
+    name: "람바 랄 전용 자쿠 I (구형 자쿠)",
+    genre: "기동전사 건담",
+    grade: ["HG"],
+  },
+  {
+    name: "검은삼연성 전용 자쿠 I (구형 자쿠)",
+    genre: "기동전사 건담",
+    grade: ["HG"],
+  },
+  {
+    name: "주다 (즈다)",
+    genre: "기동전사 건담: MS IGLOO",
+    grade: ["HG"],
+  },
+  {
     name: "자쿠 II",
     genre: "기동전사 건담",
     grade: ["HG", "MG"],
@@ -69,9 +140,24 @@ let list = [
     grade: ["HG", "MG"],
   },
   {
-    name: "샤아 전용 자쿠",
+    name: "샤아 전용 자쿠 II",
     genre: "기동전사 건담",
     grade: ["HG", "MG"],
+  },
+  {
+    name: "검은삼연성 전용 자쿠 II",
+    genre: "기동전사 건담",
+    grade: ["HG", "RG", "MG"],
+  },
+  {
+    name: "가르마 자비 전용 자쿠 II",
+    genre: "기동전사 건담",
+    grade: ["HG"],
+  },
+  {
+    name: "신 마츠나가 전용 자쿠 II",
+    genre: "기동전사 건담",
+    grade: ["HG"],
   },
   {
     name: "구프",
@@ -86,7 +172,7 @@ let list = [
   {
     name: "앗가이",
     genre: "기동전사 건담",
-    grade: ["HG", "MG"],
+    grade: ["SD", "HG", "MG"],
   },
   {
     name: "즈고크",
@@ -101,35 +187,70 @@ let list = [
   {
     name: "곡그",
     genre: "기동전사 건담",
-    grade: ["HG"],
+    grade: ["SD", "HG"],
+  },
+  {
+    name: "족그",
+    genre: "기동전사 건담",
+    grade: ["SD", "HG"],
   },
   {
     name: "걍",
     genre: "기동전사 건담",
-    grade: ["HG MG"],
+    grade: ["HG", "MG"],
   },
   {
     name: "돔",
     genre: "기동전사 건담",
-    grade: ["HG MG"],
+    grade: ["HG", "MG"],
   },
   {
     name: "겔구그",
     genre: "기동전사 건담",
-    grade: ["HG MG"],
+    grade: ["HG", "MG"],
   },
   {
     name: "샤아 전용 겔구그",
     genre: "기동전사 건담",
-    grade: ["HG MG"],
+    grade: ["HG", "MG"],
   },
   {
     name: "조니 라이덴 전용 겔구그",
     genre: "기동전사 건담",
-    grade: ["HG MG"],
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "지옹",
+    genre: "기동전사 건담",
+    grade: ["HG", "RG", "MG"],
+  },
+  {
+    name: "블루 데스티니 1호기",
+    genre: "기동전사 건담",
+    grade: ["SD", "HG"],
+  },
+  {
+    name: "블루 데스티니 2호기",
+    genre: "기동전사 건담",
+    grade: ["HG"],
+  },
+  {
+    name: "블루 데스티니 3호기",
+    genre: "기동전사 건담",
+    grade: ["SD", "HG"],
   },
   {
     name: "풀 아머 건담",
+    genre: "기동전사 건담",
+    grade: ["MG"],
+  },
+  {
+    name: "건담 트리스탄",
+    genre: "기동전사 건담",
+    grade: ["HG"],
+  },
+  {
+    name: "퍼펙트 건담",
     genre: "기동전사 건담",
     grade: ["MG"],
   },
@@ -139,8 +260,93 @@ let list = [
     grade: ["MG"],
   },
   {
+    name: "건담 4호기",
+    genre: "기동전사 건담",
+    grade: ["MG"],
+  },
+  {
+    name: "건담 5호기",
+    genre: "기동전사 건담",
+    grade: ["MG"],
+  },
+  {
+    name: "풀 아머 건담 7호기",
+    genre: "기동전사 건담",
+    grade: ["HG"],
+  },
+  {
     name: "하이곡그",
     genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG"],
+  },
+  {
+    name: "뉴 건담",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["SD", "HG", "RG", "MG"],
+  },
+  {
+    name: "뉴 건담 HWS(헤비 웨폰 시스템)",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["HG"],
+  },
+  {
+    name: "하이뉴 건담",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["RG", "HG", "MG"],
+  },
+  {
+    name: "사자비",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["SD", "HG", "MG"],
+  },
+  {
+    name: "나이팅게일",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["SD", "HG"],
+  },
+  {
+    name: "제간",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["SD", "HG", "MG"],
+  },
+  {
+    name: "리가지 (리 가지)",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["SD", "HG"],
+  },
+  {
+    name: "기라 도가",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["SD", "HG", "MG"],
+  },
+  {
+    name: "레즌 전용 기라 도가",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["SD", "HG"],
+  },
+  {
+    name: "퀘스 전용 야크트 도가",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["SD", "HG"],
+  },
+  {
+    name: "규네이 전용 야크트 도가",
+    genre: "기동전사 건담: 역습의 샤아",
+    grade: ["SD", "HG"],
+  },
+  {
+    name: "크시 (크사이) 건담",
+    genre: "기동전사 건담: 섬광의 하사웨이",
+    grade: ["SD", "HG"],
+  },
+  {
+    name: "페넬로페",
+    genre: "기동전사 건담: 섬광의 하사웨이",
+    grade: ["HG"],
+  },
+  {
+    name: "멧사 타입-F01",
+    genre: "기동전사 건담: 섬광의 하사웨이",
     grade: ["HG"],
   },
   {

@@ -126,6 +126,13 @@ function openSmooth(target, sub = false) {
     openMenu++;
     let height = cont.children.length;
     cont.style = `height:${height * 40}px;`;
+    /*
+    filter 윈도우 높이를 결정하는 부분.
+    flex-wrap상태라서 기기에 따라 한 줄일수도 두 줄일수도 있는데 높이를 어떻게 계산한담?
+    if (cont.classList.contains("filter")) {
+      cont.style.height = "auto";
+    }
+    */
     if (sub == true) {
       // 서브메뉴의 서브에서 호출한 경우
       let part = target.parentElement.parentElement;

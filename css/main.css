@@ -112,6 +112,14 @@
   flex-wrap: wrap;
   height: 0;
 }
+.header__menu .menu-sub .filter li {
+  border: transparent;
+  background-color: white;
+}
+.header__menu .menu-sub .filter li p {
+  width: auto;
+  margin: 0px 10px;
+}
 
 .main {
   position: relative;
@@ -140,6 +148,8 @@
   background: #99f;
 }
 .item .grade {
+  display: flex;
+  justify-content: space-evenly;
   width: 40%;
   padding: auto;
   background: #fff;
