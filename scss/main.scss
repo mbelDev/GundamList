@@ -22,10 +22,19 @@
   &__search {
     display: inline-block;
     position: relative;
+    .serch {
+      height: 24px;
+    }
   }
   &__btn {
     position: absolute;
-    right: 15px;
+    display: flex;
+    width: 38px;
+    height: 28px;
+    top: 6px;
+    right: 6px;
+    justify-content: center;
+    align-items: center;
     padding: 2px;
     border: 1px solid #888;
     background: #fff;
@@ -141,6 +150,7 @@
   vertical-align: center;
   span {
     line-height: 24px;
+    word-break: keep-all;
   }
   .name {
     width: 60%;
@@ -151,7 +161,7 @@
   }
   .grade {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 40%;
     padding: auto;
     background: #fff;
