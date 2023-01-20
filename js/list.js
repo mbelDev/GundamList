@@ -275,8 +275,138 @@ let list = [
     grade: ["HG"],
   },
   {
+    name: "짐 커맨드 콜로니 타입",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "짐 커맨드 우주형",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG"],
+  },
+  {
+    name: "짐 한랭지형",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG"],
+  },
+  {
+    name: "건담 NT-1 알렉스",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "자쿠 II FZ (자쿠 개改)",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG", "기타"],
+  },
+  {
+    name: "캠퍼",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "즈고크E",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG"],
+  },
+  {
     name: "하이곡그",
     genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG"],
+  },
+  {
+    name: "짐 스나이퍼 II",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG"],
+  },
+  {
+    name: "겔구그 예거",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG"],
+  },
+  {
+    name: "릭돔 II",
+    genre: "기동전사 건담 0080: 주머니속의 전쟁",
+    grade: ["HG"],
+  },
+  {
+    name: "건담 GP01 제피랜서스",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG", "RG"],
+  },
+  {
+    name: "건담 GP01 풀 버니언",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG", "RG", "MG"],
+  },
+  {
+    name: "건담 GP02 사이살리스(사이사라스)",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "건담 GP03 스테이맨",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "짐 커스텀",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "짐 쿠엘",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "파워드 짐",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "짐 캐논 UU",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "드라체",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "짐 스나이퍼 II",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["MG"],
+  },
+  {
+    name: "겔구그 마리네",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "시마 전용 겔구그 마리네",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "돔 트로펜",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "가베라 테트라라",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["HG"],
+  },
+  {
+    name: "건담 GP04 가베라",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
+    grade: ["기타"],
+  },
+  {
+    name: "덴드로비움",
+    genre: "기동전사 건담 0083: 스타더스트 메모리",
     grade: ["HG"],
   },
   {
@@ -790,15 +920,492 @@ let list = [
     grade: ["HG"],
   },
   {
-    name: "",
-    genre: "기동전사 건담",
+    name: "스트라이크 건담 (에일 소드 런처)",
+    genre: "기동전사 건담 SEED",
+    grade: ["PG", "기타"],
+  },
+  {
+    name: "프리덤 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["RG", "MG", "기타"],
+  },
+  {
+    name: "이지스 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG", "MG", "기타"],
+  },
+  {
+    name: "블리츠 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "듀얼 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["MG", "기타"],
+  },
+  {
+    name: "버스터 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "레겐 듀얼 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["기타"],
+  },
+  {
+    name: "프로비던스 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "스트라이크 루즈",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG", "RG", "PG"],
+  },
+  {
+    name: "모빌 바쿠",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "라고우",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "모빌 진",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "모빌 진 인서전트",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "모빌 하이메뉴버",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "모빌 시구",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "모빌 시구 딥 암즈",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "미구엘 전용 모빌 진",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "건담 어스트레이 턴 레드",
+    genre: "기동전사 건담 SEED",
+    grade: ["MG"],
+  },
+  {
+    name: "105대거",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "M1 어스트레이",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "저스티스 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["RG", "MG"],
+  },
+  {
+    name: "스카이 글래스퍼",
+    genre: "기동전사 건담 SEED",
+    grade: ["RG", "기타"],
+  },
+  {
+    name: "뫼비우스 제로",
+    genre: "기동전사 건담 SEED",
+    grade: ["기타"],
+  },
+  {
+    name: "미티어 유닛",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "스타게이저",
+    genre: "기동전사 건담 SEED",
+    grade: ["BB"],
+  },
+  {
+    name: "시빌리언 어스트레이 DSSD커스텀",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "건담 어스트레이 레드 프레임",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG", "MG", "PG"],
+  },
+  {
+    name: "건담 어스트레이 레드 프레임 파워드 레드",
+    genre: "기동전사 건담 SEED",
+    grade: ["기타"],
+  },
+  {
+    name: "건담 어스트레이 블루 프레임",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "건담 어스트레이 골드 프레임",
+    genre: "기동전사 건담 SEED",
+    grade: ["SD", "MG"],
+  },
+  {
+    name: "이클립스 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["MG"],
+  },
+  {
+    name: "캘러미티 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG", "기타"],
+  },
+  {
+    name: "스트라이크 느와르 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["SD", "HG", "MG"],
+  },
+  {
+    name: "스타게이저 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "하이페리온 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "레이더 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG", "기타"],
+  },
+  {
+    name: "포비든 건담",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "드레드노트",
+    genre: "기동전사 건담 SEED",
+    grade: ["HG"],
+  },
+  {
+    name: "육전형 건담",
+    genre: "기동전사 건담: 제MS08소대",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "육전형 짐",
+    genre: "기동전사 건담: 제MS08소대",
+    grade: ["HG"],
+  },
+  {
+    name: "짐 스나이퍼",
+    genre: "기동전사 건담: 제MS08소대",
+    grade: ["MG"],
+  },
+  {
+    name: "건담 EZ-8",
+    genre: "기동전사 건담: 제MS08소대",
     grade: ["HG"],
   },
   {
     name: "",
-    genre: "기동전사 건담",
+    genre: "기동전사 건담: 제MS08소대",
     grade: ["HG"],
   },
+  {
+    name: "윙 건담",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+
+  {
+    name: "윙 건담 제로",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "윙 건담 제로 커스텀",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "셴롱 건담",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "건담 데스사이즈 헬 커스텀",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "마그아낙",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "건담 샌드록",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "건담 헤비암즈",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "건담 데스사이즈",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "건담 에피온",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "리오",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "톨기스",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "윙 건담 프로토 제로",
+    genre: "신기동전기 건담W",
+    grade: [],
+  },
+  {
+    name: "크로스본 건담 X1",
+    genre: "기동전사 건담 크로스본",
+    grade: [],
+  },
+  {
+    name: "크로스본 건담 X2",
+    genre: "기동전사 건담 크로스본",
+    grade: [],
+  },
+  {
+    name: "건담 발바토스스",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 발바토스 루프스",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 발바토스 루프스 렉스",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 구시온",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 구시온 리베이크",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 바알",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 마르코시아스",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "그림겔데",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "그레이즈",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "그레이즈 카이",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "줄리에타 전용 레긴레이즈",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "헤키쟈",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "로우에이",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "아스타로트 리나시멘트",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 구시온 리베이크 풀시티",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 아스타로트 오리진",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 비다르",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 키마리스 비다르",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "헬름비게 린카",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 플라우로스",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "레긴레이즈 줄리아",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "그레이즈",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 아스타로트",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 발바토스 제6형태",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 단탈리온",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "류세이고 (유성호)",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 하지로보시",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 그레모리",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "아미다 전용 햐쿠렌",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "맥길리스 전용 슈발베 그레이즈",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 키마리스 트루퍼",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "이오 프레임 시덴",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 아스타로트 리나시멘트",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "건담 아스모데우스",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "지크루네",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "햐쿠리",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "햐쿠렌",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "유고",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+  {
+    name: "모빌아머 하쉬말",
+    genre: "기동전기 건담 철혈의 오펀스",
+    grade: [],
+  },
+
   {
     name: "",
     genre: "기동전사 건담",
