@@ -350,6 +350,241 @@ let list = [
     grade: ["HG"],
   },
   {
+    name: "시난주",
+    genre: "기동전사 건담 UC",
+    grade: ["SD", "HG", "RG", "MG"],
+  },
+  {
+    name: "시난주 스타인",
+    genre: "기동전사 건담 UC",
+    grade: ["MG"],
+  },
+  {
+    name: "네오 지옹",
+    genre: "기동전사 건담 UC",
+    grade: ["SD", "HG"],
+  },
+  {
+    name: "유니콘 건담",
+    genre: "기동전사 건담 UC",
+    grade: ["SD", "HG", "MG", "PG", "MS"],
+  },
+  {
+    name: "풀 아머 유니콘 건담",
+    genre: "기동전사 건담 UC",
+    grade: ["SD", "HG", "RG"],
+  },
+  {
+    name: "유니콘 건담 2호기 밴시",
+    genre: "기동전사 건담 UC",
+    grade: ["MG"],
+  },
+  {
+    name: "유니콘 건담 2호기 노른",
+    genre: "기동전사 건담 UC",
+    grade: ["SD", "RG", "PG"],
+  },
+  {
+    name: "유니콘 건담 3호기 페넥스",
+    genre: "기동전사 건담 UC",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "로젠 줄루",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "기라 줄루",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "안젤로 전용 기라 줄루",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "제주르",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "델타 플러스",
+    genre: "기동전사 건담 UC",
+    grade: ["SD", "HG", "MG"],
+  },
+  {
+    name: "리젤",
+    genre: "기동전사 건담 UC",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "드라이센 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "제간 에코즈 사양",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "이프리트 슈나이드",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "즈사 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "크샤트리아",
+    genre: "기동전사 건담 UC",
+    grade: ["SD", "HG", "MG"],
+  },
+  {
+    name: "도벤 울프 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "마라사이 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "욤 커크스 전용 자쿠 I 스나이퍼",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "89식 베이스 자바",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "제스타",
+    genre: "기동전사 건담 UC",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "안크샤",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "바이아란 커스텀",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "리젤 대장기",
+    genre: "기동전사 건담 UC",
+    grade: ["HG", "MG"],
+  },
+  {
+    name: "네모 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "제타 플러스 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "델타 건담",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "스타크 제간",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "제스타 캐논",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "로토 (로토 트윈)",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "실버 불릿릿",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "실버 불릿릿 서프레서",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "악그 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "쥬악그 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "조고크 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "구스타프 칼 유니콘 Ver.",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "내러티브 건담",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "스트룸 갈루스",
+    genre: "기동전사 건담 UC",
+    grade: ["HG"],
+  },
+  {
+    name: "건담 에어리얼",
+    genre: "기동전사 건담 수성의 마녀",
+    grade: ["SD", "HG", "1/100"],
+  },
+  {
+    name: "건담 르브리스",
+    genre: "기동전사 건담 수성의 마녀",
+    grade: ["HG"],
+  },
+  {
+    name: "건담 르브리스 손",
+    genre: "기동전사 건담 수성의 마녀",
+    grade: ["HG"],
+  },
+  {
+    name: "건담 르브리스 울",
+    genre: "기동전사 건담 수성의 마녀",
+    grade: ["HG"],
+  },
+  {
+    name: "미카엘리스",
+    genre: "기동전사 건담 수성의 마녀",
+    grade: ["HG"],
+  },
+  {
+    name: "베귀르베우",
+    genre: "기동전사 건담 수성의 마녀",
+    grade: ["HG"],
+  },
+  {
     name: "베귀르판테",
     genre: "기동전사 건담 수성의 마녀",
     grade: ["HG"],
@@ -390,7 +625,22 @@ let list = [
     grade: ["HG"],
   },
   {
+    name: "데미 트레이너",
+    genre: "기동전사 건담 수성의 마녀",
+    grade: ["HG"],
+  },
+  {
+    name: "데미 트레이너 추추 기",
+    genre: "기동전사 건담 수성의 마녀",
+    grade: ["HG"],
+  },
+  {
     name: "다릴 바르데",
+    genre: "기동전사 건담 수성의 마녀",
+    grade: ["HG"],
+  },
+  {
+    name: "딜란자 (일반 / 라우더 전용)",
     genre: "기동전사 건담 수성의 마녀",
     grade: ["HG"],
   },
