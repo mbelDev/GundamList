@@ -145,6 +145,7 @@
   width: 100%;
   height: auto;
   position: relative;
+  font-weight: 600;
   text-align: center;
   border: 1px solid #000;
   vertical-align: center;
@@ -153,8 +154,10 @@
     word-break: keep-all;
   }
   .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60%;
-    padding: auto;
     font-weight: 600;
     color: #151533;
     background: #99f;
@@ -162,8 +165,8 @@
   .grade {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 40%;
-    padding: auto;
     background: #fff;
   }
   .genre {
