@@ -50,9 +50,10 @@ let list = [
     grade: "UC",
   },
   {
-    name: "자쿠 I (구형 자쿠)",
+    name: "자쿠 I",
     genre: "기동전사 건담",
     grade: "UC",
+    tag: "구형 자쿠, 구 자쿠",
   },
   {
     name: "자쿠 I 스나이퍼 타입",
@@ -60,14 +61,16 @@ let list = [
     grade: "UC",
   },
   {
-    name: "람바 랄 전용 자쿠 I (구형 자쿠)",
+    name: "람바 랄 전용 자쿠 I",
     genre: "기동전사 건담",
     grade: "UC",
+    tag: "구형 자쿠, 구 자쿠",
   },
   {
-    name: "검은삼연성 전용 자쿠 I (구형 자쿠)",
+    name: "검은삼연성 전용 자쿠 I",
     genre: "기동전사 건담",
     grade: "UC",
+    tag: "구형 자쿠, 구 자쿠",
   },
   {
     name: "주다 (즈다)",
@@ -590,12 +593,12 @@ let list = [
     grade: "UC",
   },
   {
-    name: "실버 불릿릿",
+    name: "실버 불릿",
     genre: "기동전사 건담 UC",
     grade: "UC",
   },
   {
-    name: "실버 불릿릿 서프레서",
+    name: "실버 불릿 서프레서",
     genre: "기동전사 건담 UC",
     grade: "UC",
   },
@@ -2468,9 +2471,10 @@ let list = [
     grade: "비우주세기",
   },
   {
-    name: "자쿠 I (구형 자쿠)",
+    name: "자쿠 I ",
     genre: "기동전사 건담 썬더볼트",
     grade: "UC",
+    tag: "구형 자쿠, 구 자쿠",
   },
   {
     name: "자쿠 II 빅 건",
@@ -2528,19 +2532,22 @@ let list = [
     grade: "UC",
   },
   {
-    name: "자쿠 I (구형 자쿠)",
+    name: "자쿠 I",
     genre: "기동전사 건담 The Origin",
     grade: "UC",
+    tag: "구형 자쿠, 구 자쿠",
   },
   {
-    name: "자쿠 I (구형 자쿠) 키시리아 부대기",
+    name: "자쿠 I 키시리아 부대기",
     genre: "기동전사 건담 The Origin",
     grade: "UC",
+    tag: "구형 자쿠, 구 자쿠",
   },
   {
-    name: "샤아 전용 자쿠 I (구형 자쿠)",
+    name: "샤아 전용 자쿠 I",
     genre: "기동전사 건담 The Origin",
     grade: "UC",
+    tag: "구형 자쿠, 구 자쿠",
   },
   {
     name: "액트 자쿠 키시리아 부대기",
@@ -2588,9 +2595,10 @@ let list = [
     grade: "UC",
   },
   {
-    name: "자쿠 I (구형 자쿠) 데님/슬렌더 기",
+    name: "자쿠 I 데님/슬렌더 기",
     genre: "기동전사 건담 The Origin",
     grade: "UC",
+    tag: "구형 자쿠, 구 자쿠",
   },
   {
     name: "국지형 건담",
@@ -2988,11 +2996,6 @@ let list = [
   },
   {
     name: "네모",
-    genre: "기동전사 Z건담",
-    grade: "UC",
-  },
-  {
-    name: "백식",
     genre: "기동전사 Z건담",
     grade: "UC",
   },
