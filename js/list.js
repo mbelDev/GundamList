@@ -32,6 +32,12 @@ function listReset() {
     let genre = document.createElement("span");
     genre.innerHTML = element.genre;
     genre.classList.add("genre");
+    if (element.tag != null) {
+      let tag = document.createElement("span");
+      tag.innerHTML = element.tag;
+      tag.classList.add("tag");
+      contain.append(tag);
+    }
     contain.appendChild(name);
     contain.appendChild(grade);
     contain.appendChild(genre);
