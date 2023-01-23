@@ -161,12 +161,20 @@ function openSmooth(target, sub = false) {
 // 검색창
 search = document.addEventListener("keyup", (e) => {
   const items = document.querySelectorAll(".item");
-  const serchFilter = e.target.value.trim();
+  const serchFilter = e.target.value.toUpperCase().trim();
   items.forEach((item) => {
-    if (item.textContent.includes(serchFilter)) {
+    if (item.textContent.toUpperCase().includes(serchFilter)) {
       item.style.display = "flex";
     } else {
       item.style.display = "none";
     }
   });
 });
+
+// ---------------------------------------------------- //
+
+// 필터 관리 함수들
+
+function filterReset() {
+  let btns = document.querySelectorAll(".menu-main li");
+}
