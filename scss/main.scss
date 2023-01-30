@@ -66,13 +66,16 @@
       li {
         line-height: 39px;
         border: 1px solid #777;
-        &:before {
-          display: inline-block;
-          width: 10px;
-          height: 10px;
-
-          border: 1px solid #000;
-          content: " ";
+      }
+      span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border: 1px solid #000;
+        content: " ";
+        &.selected {
+          background: #000;
         }
       }
       &-sub {
