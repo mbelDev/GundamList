@@ -367,9 +367,10 @@ let list = [
     grade: "UC",
   },
   {
-    name: "자쿠 II FZ (자쿠 개改)",
+    name: "자쿠 II FZ",
     genre: "기동전사 건담 0080: 주머니속의 전쟁",
     grade: "UC",
+    tag: "자쿠 개, 자쿠改",
   },
   {
     name: "캠퍼",
@@ -390,6 +391,7 @@ let list = [
     name: "짐 스나이퍼 II",
     genre: "기동전사 건담 0080: 주머니속의 전쟁",
     grade: "UC",
+    tag: "짐 스나이퍼 2",
   },
   {
     name: "겔구그 예거",
@@ -400,11 +402,13 @@ let list = [
     name: "릭돔 II",
     genre: "기동전사 건담 0080: 주머니속의 전쟁",
     grade: "UC",
+    tag: "릭돔 2",
   },
   {
     name: "건담 GP01 제피랜서스",
     genre: "기동전사 건담 0083: 스타더스트 메모리",
     grade: "UC",
+    tag: "건담 GP01 제피랜더스",
   },
   {
     name: "건담 GP01 풀 버니언",
@@ -412,9 +416,10 @@ let list = [
     grade: "UC",
   },
   {
-    name: "건담 GP02 사이살리스(사이사라스)",
+    name: "건담 GP02 사이살리스",
     genre: "기동전사 건담 0083: 스타더스트 메모리",
     grade: "UC",
+    tag: "건담 GP02 사이사라스",
   },
   {
     name: "건담 GP03 스테이맨",
@@ -437,9 +442,10 @@ let list = [
     grade: "UC",
   },
   {
-    name: "짐 캐논 UU",
+    name: "짐 캐논 II",
     genre: "기동전사 건담 0083: 스타더스트 메모리",
     grade: "UC",
+    tag: "짐 캐논 2",
   },
   {
     name: "드라체",
@@ -450,6 +456,7 @@ let list = [
     name: "짐 스나이퍼 II",
     genre: "기동전사 건담 0083: 스타더스트 메모리",
     grade: "UC",
+    tag: "짐 스나이퍼 2",
   },
   {
     name: "겔구그 마리네",
@@ -512,9 +519,10 @@ let list = [
     grade: "UC",
   },
   {
-    name: "리가지 (리 가지)",
+    name: "리가지",
     genre: "기동전사 건담: 역습의 샤아",
     grade: "UC",
+    tag: "리 가지, 리 가즈이",
   },
   {
     name: "기라 도가",
@@ -537,9 +545,10 @@ let list = [
     grade: "UC",
   },
   {
-    name: "크시 (크사이) 건담",
+    name: "크시 건담",
     genre: "기동전사 건담: 섬광의 하사웨이",
     grade: "UC",
+    tag: "크사이 건담",
   },
   {
     name: "페넬로페",
@@ -717,12 +726,12 @@ let list = [
     grade: "UC",
   },
   {
-    name: "실버 불릿",
+    name: "실버 불릿릿",
     genre: "기동전사 건담 UC",
     grade: "UC",
   },
   {
-    name: "실버 불릿 서프레서",
+    name: "실버 불릿릿 서프레서",
     genre: "기동전사 건담 UC",
     grade: "UC",
   },
@@ -2595,7 +2604,7 @@ let list = [
     grade: "비우주세기",
   },
   {
-    name: "자쿠 I ",
+    name: "자쿠 I",
     genre: "기동전사 건담 썬더볼트",
     grade: "UC",
     tag: "구형 자쿠, 구 자쿠",
