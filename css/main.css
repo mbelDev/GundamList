@@ -70,12 +70,16 @@
   line-height: 39px;
   border: 1px solid #777;
 }
-.header__menu .menu li:before {
+.header__menu .menu span {
   display: inline-block;
   width: 10px;
   height: 10px;
+  background: #fff;
   border: 1px solid #000;
   content: " ";
+}
+.header__menu .menu span.selected {
+  background: #000;
 }
 .header__menu .menu-sub {
   z-index: 3;

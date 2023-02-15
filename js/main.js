@@ -6,8 +6,9 @@ const menuWnd = document.querySelector(".header__menu");
 const menuMain = document.querySelectorAll(".menu-main > p");
 const menuSub = document.querySelectorAll(".menu-sub > p");
 const menuSubSub = document.querySelectorAll(".menu-sub-sub > p");
+const btnSelect = document.querySelectorAll(".menu-main span");
 
-const arrFilter = [];
+let arrFilter = [];
 
 let menuHeight = 0;
 let openMenu = 0;
@@ -53,6 +54,18 @@ menuSubSub.forEach((element, index) => {
     =>선택 서브 외의 모든 서브를 닫거나.
 
   */
+});
+// 각 필터 버튼에 이벤트 할당
+btnSelect.forEach((ele) => {
+  ele.addEventListener("click", function (e) {
+    console.log(e.target.classList);
+    target = e.target.classList;
+    target.toggle("selected");
+    let target_sub = parent.getElementByClassName("selected");
+    target_sub.forEach((ele) => {
+      ele.classList.add("selected");
+    });
+  });
 });
 
 function open() {
@@ -176,5 +189,11 @@ search = document.addEventListener("keyup", (e) => {
 // 필터 관리 함수들
 
 function filterReset() {
-  let btns = document.querySelectorAll(".menu-main li");
+  let btns = document.querySelectorAll(".menu-main li p");
+  arrFilter = [];
+  btns.forEach((ele) => {
+    if (ele.classList.contains("selected")) {
+      arrFilter.push(ele.textContent);
+    }
+  });
 }
