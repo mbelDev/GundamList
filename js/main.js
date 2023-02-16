@@ -55,27 +55,32 @@ menuSubSub.forEach((element, index) => {
 
   */
 });
-// 각 필터 버튼에 이벤트 할당
+
+// ================ 각 필터 버튼에 이벤트 할당 =================== //
+
 btnSelect.forEach((ele) => {
   ele.addEventListener("click", function (e) {
-    console.log(e.target.classList);
-    target = e.target.classList;
-    target.toggle("selected");
-    let target_sub = parent.classList.contains("selected");
-    target_sub.forEach((ele) => {
-      ele.classList.add("selected");
-    });
+    // console.log(e.target.classList);
+    btn = e.target.classList;
+    btn.toggle("selected");
+
+    if (btn.contains("selected")) {
+      filterCheck(e.target, "true");
+    } else {
+      filterCheck(e.target, "false");
+    }
   });
 });
 
+// ======================  필터 이벤트  ======================== //
 function open() {
   menu.classList.add("open");
   menuWnd.classList.add("open");
-  console.log("open");
+  // console.log("open");
 }
 
 function reset() {
-  console.log("reset");
+  // console.log("reset");
   menu.classList.remove("open");
   menuWnd.classList.remove("open");
   menuSub.forEach((element, index) => {
@@ -153,7 +158,7 @@ function openSmooth(target, sub = false) {
       part.style = `height:${menuHeight * 40}px`;
       part.previousSibling.previousSibling.classList.add("subOpen");
     }
-    console.log(menuHeight);
+    // console.log(menuHeight);
   } else {
     openMenu--;
     cont.style = `height:0px;`;
@@ -188,8 +193,51 @@ search = document.addEventListener("keyup", (e) => {
 
 // 필터 관리 함수들
 
+function filterCheck(_target, _on) {
+  // console.log(_target);
+  if (_target.parentElement.children.length > 2) {
+    target = _target.parentElement.children[2]; // span버튼을 클릭하면 부모인 li에서 하위 ul을 찾아낸다
+    if (target.children.length > 0) {
+      // 그 ul이 자식 li를 가지고있는지 체크
+      for (i = 0; i < target.childElementCount; i++) {
+        if (_on == "true") {
+          target.children[i].children[0].classList.add("selected");
+        } else if (_on == "false") {
+          target.children[i].children[0].classList.remove("selected");
+        }
+        // console.log(target.children[i].children.length);
+        if (target.children[i].children.length > 2) {
+          filterSub(target.children[i].children[2], _on);
+        }
+      }
+      // for (i = 0; i < target.children.length - 1; i++) {
+      //   if (_on == "true") {
+      //     filterCheck(target.children[i].children[0], "true");
+      //   } else if (_on == "false") {
+      //     filterCheck(target.children[i].children[0], "false");
+      //   }
+      //   console.log(target.children.length);
+      // }
+      // ===== 첫 번째 서브에만 적용되고 두 번째부터 적용이 안 됨 ===== //
+      // ===== 지역변수 i를 공유하고 있어서 그랬음. 별도의 함수로 빼서 ===== //
+      // ===== for문의 임시변수를 j로 변경해서 적용시킴 ===== //
+    }
+  }
+}
+function filterSub(_target, _on) {
+  console.log(_target);
+  if (_target.children.length > 0) {
+    for (j = 0; j < _target.children.length; j++) {
+      if (_on == "true") {
+        _target.children[j].children[0].classList.add("selected");
+      } else {
+        _target.children[j].children[0].classList.remove("selected");
+      }
+    }
+  }
+}
 function filterReset() {
-  let btns = document.querySelectorAll(".menu-main li p");
+  let btns = document.querySelectorAll(".menu-main li span");
   arrFilter = [];
   btns.forEach((ele) => {
     if (ele.classList.contains("selected")) {
