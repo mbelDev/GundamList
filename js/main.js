@@ -55,27 +55,32 @@ menuSubSub.forEach((element, index) => {
 
   */
 });
-// 각 필터 버튼에 이벤트 할당
+
+// ================ 각 필터 버튼에 이벤트 할당 =================== //
+
 btnSelect.forEach((ele) => {
   ele.addEventListener("click", function (e) {
-    console.log(e.target.classList);
-    target = e.target.classList;
-    target.toggle("selected");
-    let target_sub = parent.getElementByClassName("selected");
-    target_sub.forEach((ele) => {
-      ele.classList.add("selected");
-    });
+    // console.log(e.target.classList);
+    btn = e.target.classList;
+    btn.toggle("selected");
+    
+    if (btn.contains("selected")){
+      filterCheck(e.target,"true");
+    }else{
+      filterCheck(e.target,"false");
+    }
   });
 });
 
+// ======================  필터 이벤트  ======================== //
 function open() {
   menu.classList.add("open");
   menuWnd.classList.add("open");
-  console.log("open");
+  // console.log("open");
 }
 
 function reset() {
-  console.log("reset");
+  // console.log("reset");
   menu.classList.remove("open");
   menuWnd.classList.remove("open");
   menuSub.forEach((element, index) => {
@@ -153,7 +158,7 @@ function openSmooth(target, sub = false) {
       part.style = `height:${menuHeight * 40}px`;
       part.previousSibling.previousSibling.classList.add("subOpen");
     }
-    console.log(menuHeight);
+    // console.log(menuHeight);
   } else {
     openMenu--;
     cont.style = `height:0px;`;
@@ -188,8 +193,25 @@ search = document.addEventListener("keyup", (e) => {
 
 // 필터 관리 함수들
 
+function filterCheck(_target,_on) {
+  target = _target.parentElement.children[2];
+  if(target.children.length>0){
+    for(i=0;i<target.childElementCount;i++){
+      if(_on == "true"){
+        target.children[i].children[0].classList.add("selected");
+      }
+      else if(_on == "false"){
+        target.children[i].children[0].classList.remove("selected");
+        // if(target.chldren[i].children[2]!=0){
+        //   filterCheck(target.chldren[i].children[2],"false");
+
+        // }
+      }
+    }
+  }
+}
 function filterReset() {
-  let btns = document.querySelectorAll(".menu-main li p");
+  let btns = document.querySelectorAll(".menu-main li span");
   arrFilter = [];
   btns.forEach((ele) => {
     if (ele.classList.contains("selected")) {
