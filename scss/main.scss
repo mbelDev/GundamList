@@ -32,13 +32,19 @@
     width: 38px;
     height: 28px;
     top: 6px;
-    right: 6px;
+
     justify-content: center;
     align-items: center;
     padding: 2px;
     border: 1px solid #888;
     background: #fff;
     cursor: pointer;
+    &.menu-btn {
+      right: 6px;
+    }
+    &.notice-btn {
+      right: 48px;
+    }
   }
   &__menu {
     width: 100vw;

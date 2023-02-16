@@ -61,7 +61,7 @@ btnSelect.forEach((ele) => {
     console.log(e.target.classList);
     target = e.target.classList;
     target.toggle("selected");
-    let target_sub = parent.getElementByClassName("selected");
+    let target_sub = parent.classList.contains("selected");
     target_sub.forEach((ele) => {
       ele.classList.add("selected");
     });
