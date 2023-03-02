@@ -1,4 +1,5 @@
 const search = document.querySelector(".search-btn");
+const searchField = document.querySelector(".search");
 const items = document.querySelectorAll(".item");
 
 const menu = document.querySelector(".menu-btn");
@@ -9,6 +10,7 @@ const menuSubSub = document.querySelectorAll(".menu-sub-sub > p");
 const btnSelect = document.querySelectorAll(".menu-main span");
 
 let arrFilter = [];
+let arrItems = [];
 
 let menuHeight = 0;
 let openMenu = 0;
@@ -178,15 +180,8 @@ function openSmooth(target, sub = false) {
 
 // 검색창
 search = document.addEventListener("keyup", (e) => {
-  const items = document.querySelectorAll(".item");
   const serchFilter = e.target.value.toUpperCase().trim();
-  items.forEach((item) => {
-    if (item.textContent.toUpperCase().includes(serchFilter)) {
-      item.style.display = "flex";
-    } else {
-      item.style.display = "none";
-    }
-  });
+  serchRun(serchFilter);
 });
 
 // ---------------------------------------------------- //
@@ -233,6 +228,8 @@ function filterCheck(_target, _on) {
 
   // }
   filterReflesh();
+  filterReset();
+  serchRun(searchField.value);
 }
 function filterSub(_target, _on) {
   // console.log(_target);
@@ -256,6 +253,20 @@ function filterReset() {
       arrFilter.push(ele.parentElement.children[1].textContent);
     }
   });
+
+  arrItems = document.querySelectorAll(".item");
+  arrItems.forEach((item) => {
+    item.style.display = "none";
+    item.classList.remove("filted");
+    arrFilter.forEach((filter)=>{
+      let filterText = filter.toUpperCase();
+      if( item.textContent.toUpperCase().includes(filterText) ){
+        item.style.display = "flex";
+        item.classList.add("filted");
+      }
+    })
+  });
+  //작업중
 }
 
 function filterReflesh() {
@@ -286,4 +297,24 @@ function filterReflesh() {
   })
   // console.log(allTargets);
   // console.log(targets);
+}
+
+function filterStarter(){
+  let allSpans = document.querySelectorAll(".menu span")
+  console.log(allSpans);
+  allSpans.forEach((span)=>{
+    span.classList.add("selected");
+  })
+  filterReset();
+}
+
+function serchRun(serchFilter){
+  const items = arrItems;
+  items.forEach((item) => {
+    if (item.textContent.toUpperCase().includes(serchFilter) && item.classList.contains("filted")) {
+      item.style.display = "flex";
+    } else {
+      item.style.display = "none";
+    }
+  });
 }
