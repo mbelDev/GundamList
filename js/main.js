@@ -195,6 +195,7 @@ search = document.addEventListener("keyup", (e) => {
 
 function filterCheck(_target, _on) {
   // console.log(_target);
+  //_target = 이벤트 대상. ul // _on 선택인지 선택 해제인지.
   if (_target.parentElement.children.length > 2) {
     target = _target.parentElement.children[2]; // span버튼을 클릭하면 부모인 li에서 하위 ul을 찾아낸다
     if (target.children.length > 0) {
@@ -223,9 +224,19 @@ function filterCheck(_target, _on) {
       // ===== for문의 임시변수를 j로 변경해서 적용시킴 ===== //
     }
   }
+  // if (_target.parentElement.parentElement.parentElement.classList.contains("menu")){
+  //   console.log(_target.parentElement.parentElement.parentElement);
+  //   targetRoot = _target.parentElement.parentElement.parentElement;
+  //   if (_on == "false"){
+  //     targetRoot.children[0].classList.remove("selected");
+  //   }
+
+  // }
+  filterReflesh();
 }
 function filterSub(_target, _on) {
-  console.log(_target);
+  // console.log(_target);
+  //_target = 이벤트 대상. ul // _on 선택인지 선택 해제인지.
   if (_target.children.length > 0) {
     for (j = 0; j < _target.children.length; j++) {
       if (_on == "true") {
@@ -236,12 +247,43 @@ function filterSub(_target, _on) {
     }
   }
 }
+
 function filterReset() {
   let btns = document.querySelectorAll(".menu-main li span");
   arrFilter = [];
   btns.forEach((ele) => {
     if (ele.classList.contains("selected")) {
-      arrFilter.push(ele.textContent);
+      arrFilter.push(ele.parentElement.children[1].textContent);
     }
   });
+}
+
+function filterReflesh() {
+  let allTargets = document.querySelectorAll(".menu li")
+  let targets = [];
+  allTargets.forEach((hasChildUl)=>{
+      if(hasChildUl.children[2] != null){
+        targets.push(hasChildUl);
+        }
+      })
+  targets.forEach((ele)=>{
+    if (ele.children[2].children.length>0){
+      let target = ele.children[2];
+      let selectChecker = target.children.length;
+      for(i=0 ; i<target.children.length ; i++){
+        if (target.children[i].children[0].classList.contains("selected")){
+          selectChecker--;
+          // console.log(target.children[i],target.children[i].children[0]);
+        }
+      }
+      if ( selectChecker > 0 ){
+        ele.children[0].classList.remove("selected");
+      }else{ 
+        ele.children[0].classList.add("selected");
+      }
+      // console.log(selectChecker+"/"+target.children.length+"("+target.children.length+")");
+    }
+  })
+  // console.log(allTargets);
+  // console.log(targets);
 }
