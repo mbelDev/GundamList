@@ -2,6 +2,7 @@ const search = document.querySelector(".search-btn");
 const searchField = document.querySelector(".search");
 const items = document.querySelectorAll(".item");
 
+const notice = document.querySelector(".notice-btn");
 const menu = document.querySelector(".menu-btn");
 const menuWnd = document.querySelector(".header__menu");
 const menuMain = document.querySelectorAll(".menu-main > p");
@@ -15,6 +16,9 @@ let arrItems = [];
 let menuHeight = 0;
 let openMenu = 0;
 
+notice.addEventListener("clcick",function() {
+  console.log("nothing");
+});
 menu.addEventListener("click", function () {
   if (!menu.classList.contains("open")) {
     return open();
@@ -25,7 +29,16 @@ menu.addEventListener("click", function () {
 // 각 메뉴 버튼에 이벤트 할당
 menuSub.forEach((element, index) => {
   element.addEventListener("click", function () {
-    element.classList.toggle("open");
+    if (element.classList.contains("open")) {
+      resetMain();
+      resetSub();
+      resetHeight();
+    }else{
+      resetMain();
+      resetSub();
+      resetHeight();
+      element.classList.toggle("open");
+    }
     openSmooth(element);
   });
 });
@@ -99,14 +112,6 @@ function reset() {
   } else {
     menuWnd.style = "transition-delay: 0";
   }
-
-  /*
-  모두닫기
-  let closeAll = document.querySelectorAll(".menu-main ul");
-  closeAll.forEach((element) => {
-    element.style = "height:0px;";
-  });
-  */
   openMenu = 0;
 }
 
@@ -121,6 +126,7 @@ function resetMain() {
   let target = document.querySelectorAll(".menu-sub > ul");
   target.forEach((element) => {
     element.style = "height:0px";
+    element.previousSibling.previousSibling.classList.remove("open");
   });
 }
 function resetHeight() {
@@ -180,8 +186,7 @@ function openSmooth(target, sub = false) {
 
 // 검색창
 search = document.addEventListener("keyup", (e) => {
-  const serchFilter = e.target.value.toUpperCase().trim();
-  serchRun(serchFilter);
+  serchRun();
 });
 
 // ---------------------------------------------------- //
@@ -219,17 +224,9 @@ function filterCheck(_target, _on) {
       // ===== for문의 임시변수를 j로 변경해서 적용시킴 ===== //
     }
   }
-  // if (_target.parentElement.parentElement.parentElement.classList.contains("menu")){
-  //   console.log(_target.parentElement.parentElement.parentElement);
-  //   targetRoot = _target.parentElement.parentElement.parentElement;
-  //   if (_on == "false"){
-  //     targetRoot.children[0].classList.remove("selected");
-  //   }
-
-  // }
-  filterReflesh();
-  filterReset();
-  serchRun(searchField.value);
+  filterReflesh(); // 체크된 필터의 부모, 자식 체크(casecade)
+  filterReset(); // 필터에 체크된 장르만 모아서 출력
+  serchRun(); // 정리된 목록내부에서 검색어에 해당되는 목록만 재출력
 }
 function filterSub(_target, _on) {
   // console.log(_target);
@@ -297,6 +294,8 @@ function filterReflesh() {
   })
   // console.log(allTargets);
   // console.log(targets);
+  // 역순으로 해야함. 자식부터 체크해서 위로 올라가야한다. 03.03
+  // 자식이 한 개라도 체크 되어있으면 부모도 체크되게 바꾸자. 대신 꽉 찬게 아니면 회색으로??? selected 외에 하나가 추가되어야???
 }
 
 function filterStarter(){
@@ -308,7 +307,8 @@ function filterStarter(){
   filterReset();
 }
 
-function serchRun(serchFilter){
+function serchRun(){
+  serchFilter = document.querySelector(".search").value.toUpperCase().trim()
   const items = arrItems;
   items.forEach((item) => {
     if (item.textContent.toUpperCase().includes(serchFilter) && item.classList.contains("filted")) {
